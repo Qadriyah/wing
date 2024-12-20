@@ -4,7 +4,7 @@ import NavItem from "./NavItem";
 
 const SideNav = () => {
   return (
-    <nav className="w-[60px] h-screen bg-[#115E56] flex flex-col gap-[30px] pt-[24px] pb-[24px] items-center fixed left-0">
+    <nav className="w-[60px] h-screen bg-[#115E56] flex flex-col gap-[30px] pt-[24px] pb-[24px] items-center fixed left-0 top-0 z-50">
       <div>
         <Image src="/media/logo.png" width={33.2} height={33.2} alt="logo" />
       </div>

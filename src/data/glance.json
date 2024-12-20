@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Consultations",
+    "amount": "24",
+    "icon": "bubble.png",
+    "variation": {
+      "increase": true,
+      "value": "15%"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Orders placed",
+    "amount": "12",
+    "icon": "tag.png",
+    "variation": {
+      "increase": false,
+      "value": "15%"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Conversion",
+    "amount": "50%",
+    "icon": "check.png",
+    "variation": {
+      "increase": false,
+      "value": "15%"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Total sales value",
+    "amount": "$2,400",
+    "icon": "coins.png",
+    "variation": {
+      "increase": true,
+      "value": "15%"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Average order value",
+    "icon": "coin.png",
+    "amount": "$240",
+    "variation": {
+      "increase": true,
+      "value": "15%"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Commission paid",
+    "amount": "$240",
+    "icon": "bank.png",
+    "variation": {
+      "increase": true,
+      "value": "15%"
+    }
+  }
+]
