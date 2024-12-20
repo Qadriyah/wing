@@ -3,7 +3,7 @@ import NavItem from "./NavItem";
 
 const TopNav = () => {
   return (
-    <nav className="fixed top-0 w-full ml-[60px] h-[94px] pt-[24px] pl-[40px] pb-[24px] pr-[40px] flex gap-3 border-b border-b-[#DCDFE4]">
+    <nav className="fixed top-0 w-full h-[94px] ml-[3.75rem] pt-[24px] pl-[40px] pb-[24px] pr-[40px] flex gap-3 border-b border-b-[#DCDFE4] bg-white">
       <NavItem route="/summary">
         <div
           className={`h-[46px] pl-3 pr-3 rounded-full bg-[#CCFBEF] flex gap-2 justify-center items-center group hover:bg-[#CCFBEF]`}
