@@ -54,3 +54,12 @@ table tr th {
 .chat-wrapper {
   height: calc(100vh - 150px);
 }
+
+.sort-icon {
+  width: 20px;
+  height: 20px;
+  background-image: url("/media/sort.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
