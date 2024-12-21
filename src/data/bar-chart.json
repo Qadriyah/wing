@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Mon",
+    "Incoming": 50,
+    "Experts online": 40,
+    "Answered": 10
+  },
+  {
+    "name": "Tue",
+    "Incoming": 45,
+    "Experts online": 30,
+    "Answered": 20
+  },
+  {
+    "name": "Wed",
+    "Incoming": 24,
+    "Experts online": 20,
+    "Answered": 15
+  },
+  {
+    "name": "Thu",
+    "Incoming": 40,
+    "Experts online": 15,
+    "Answered": 30
+  },
+  {
+    "name": "Fri",
+    "Incoming": 30,
+    "Experts online": 25,
+    "Answered": 25
+  },
+  {
+    "name": "Sat",
+    "Incoming": 28,
+    "Experts online": 45,
+    "Answered": 45
+  },
+  {
+    "name": "Sun",
+    "Incoming": 55,
+    "Experts online": 38,
+    "Answered": 40
+  }
+]
