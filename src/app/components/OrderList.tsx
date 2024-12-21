@@ -24,6 +24,17 @@ const OrderList = () => {
     setCurrentPage(+page);
   };
 
+  const sortTable = (field: string) => {
+    setSlicedOrders((prevState) =>
+      [...prevState].sort(
+        (
+          a: Record<string, string | number>,
+          b: Record<string, string | number>
+        ) => (a[field] > b[field] ? 1 : a[field] < b[field] ? -1 : 0)
+      )
+    );
+  };
+
   React.useEffect(() => {
     (async () => {
       const { default: data } = await import(`@/data/orders.json`);
@@ -38,8 +49,24 @@ const OrderList = () => {
       <table className="w-full">
         <thead>
           <tr>
-            <th>Product</th>
-            <th>Date</th>
+            <th>
+              <div className="flex gap-2">
+                <p>Product</p>
+                <div
+                  className="sort-icon cursor-pointer"
+                  onClick={() => sortTable("product")}
+                />
+              </div>
+            </th>
+            <th>
+              <div className="flex gap-2">
+                <p>Date</p>
+                <div
+                  className="sort-icon cursor-pointer"
+                  onClick={() => sortTable("date")}
+                />
+              </div>
+            </th>
             <th>Time spent</th>
             <th>Order Value</th>
             <th>Commission</th>
