@@ -8,3 +8,10 @@ export type OrderType = {
   commission: number;
   delivered: string;
 };
+
+export type BarChartDataType = {
+  day: string;
+  incoming: number;
+  answered: number;
+  experts: number;
+};

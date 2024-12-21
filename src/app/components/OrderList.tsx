@@ -34,7 +34,7 @@ const OrderList = () => {
   }, [sliceData, currentPage]);
 
   return (
-    <div className="rounded-lg border border-[#DCDFE4]">
+    <div className="rounded-lg border border-[#DCDFE4] min-w-[200px] overflow-scroll">
       <table className="w-full">
         <thead>
           <tr>
@@ -63,13 +63,15 @@ const OrderList = () => {
               </td>
               <td>
                 <div>
-                  <p>{moment(order.date).format("DD MMM 'YYYY")}</p>
+                  <p className="text-ellipsis overflow-hidden whitespace-nowrap">
+                    {moment(order.date).format("DD MMM 'YYYY")}
+                  </p>
                   <p className="text-[0.75rem] font-normal">
                     {moment(order.date).format("hh:mm A")}
                   </p>
                 </div>
               </td>
-              <td>
+              <td className="text-ellipsis overflow-hidden whitespace-nowrap">
                 {convertTimeToHoursMin(
                   moment(order.delivered).diff(order.date)
                 )}

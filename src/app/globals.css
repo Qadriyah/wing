@@ -14,6 +14,14 @@
   }
 }
 
+@layer components {
+  .chart-section {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 43.75rem minmax(100px, 1fr);
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -32,4 +40,17 @@ table tr th {
   border-bottom: 1px solid #dcdfe4;
   font-weight: 400;
   font-size: 0.875rem;
+}
+
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  display: none;
+}
+
+.top-menu-width {
+  width: calc(100vw - 4rem);
+}
+
+.chat-wrapper {
+  height: calc(100vh - 150px);
 }

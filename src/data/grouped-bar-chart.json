@@ -1,0 +1,12 @@
+[
+  {
+    "name": "This week",
+    "Orders closed": 40,
+    "Consultations": 20
+  },
+  {
+    "name": "Last week",
+    "Orders closed": 30,
+    "Consultations": 15
+  }
+]
